@@ -9,7 +9,10 @@ let
 
   run = pkgs.writeScriptBin "run.sh" ''
     #!${pkgs.stdenv.shell}
-    mkdir -p /storage/config /storage/media/movies
+    # .NET apps insist on a writable HOME (XDG) — the container default is /var/empty
+    export HOME=/storage/config
+    export XDG_CONFIG_HOME=/storage/config/xdg
+    mkdir -p /storage/config/xdg /storage/media/movies
     BIN="$(ls ${app}/bin | head -n1)"
     exec ${app}/bin/$BIN -data /storage/config -nobrowser
   '';

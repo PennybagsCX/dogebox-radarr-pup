@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "meta": {
     "name": "Radarr",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "logoPath": "logo.png",
     "shortDescription": "Movie collection automation for Usenet & BitTorrent users",
     "longDescription": "Radarr manages your movie wishlist: add films, and it watches quality/profile rules, grabs releases from the download clients and indexers you configure, renames and organizes them, and hands them off to your media library. Pairs with the Jellyfin pup via the host media sync.",
@@ -16,7 +16,7 @@
   "container": {
     "build": {
       "nixFile": "pup.nix",
-      "nixFileSha256": "330b051aef5fe8f690ceb38cc033f2d7b8bdc6a18a8b0603c1c45a44a8870397"
+      "nixFileSha256": "7a6f8a4e379dcd9b32dbd2dd60f6a570ee8a9daa8af9875dba1f5eed10dc1e50"
     },
     "services": [
       {

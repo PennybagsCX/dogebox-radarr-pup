@@ -1,0 +1,6 @@
+{
+  "id": "dts.pups.radarr",
+  "name": "dts — radarr",
+  "description": "Radarr movie automation pup for Dogebox",
+  "pups": [{"location": "radarr"}]
+}
